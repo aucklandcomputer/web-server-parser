@@ -1,4 +1,4 @@
-# Web Server Workload Workload Characterisation.
+# Web Server Workload Characterisation.
 
 Description: This project analyses an annual record of server logs in the Common Log Format.
 
