@@ -336,7 +336,7 @@ class Parser:
         if code == '304' : return 'Not Modified'   
         return None
 
-if __name__ == '__main__':
+if __name__ == '__main__': #Move logfile = open() function string parameter into local project file in auckland computer.
     logfile = open('/home/ac/Downloads/Assignment(1)/Assignment/UofC_access_log/access_log', 'r', errors='ignore')
     logParser = Parser()
     logParser.parse(logfile)
