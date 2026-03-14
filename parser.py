@@ -1,3 +1,8 @@
+"""
+This class parses common log files.
+@aucklandcomputer
+"""
+
 from datetime import datetime
 import numpy as np
 import matplotlib.pyplot as plt
@@ -106,7 +111,8 @@ class Parser:
         localBytes = 0
         remoteBytes = 0
 
-        print("Reading log file...")
+        print("***___***START***___***")
+
         for line in logFile:
             elements = line.split()
 
@@ -267,6 +273,8 @@ class Parser:
         print("len(nameList)={0}".format(len(self.nameList))) # Print the cardinality of the list of unique names.
 
         print("Unique Bytes={0}".format(self.uniqueBytes)) # Print unique bytes
+
+        print("***___***END***___***")
 
         #print("len(nameSizeDict)={0}".format(len(self.nameSizeDict))) # Prints the size of the nameSizeDictionary
 
